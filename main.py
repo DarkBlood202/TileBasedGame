@@ -1,5 +1,5 @@
 import pygame as pg
-from os import path
+# from os import path
 from settings import *
 from sprites import *
 from tilemap import *
@@ -14,7 +14,8 @@ class Game:
 
 	def loadData(self):
 		gameFolder = path.dirname(__file__)
-		self.map = Map(path.join(gameFolder,"map.txt"))
+		# self.map = Map(path.join(gameFolder,"data","maps","map.txt"))
+		self.map = Map(path.join(MAP_FOLDER,"map.txt"))
 
 	def newGame(self):
 		self.allSprites = pg.sprite.Group()

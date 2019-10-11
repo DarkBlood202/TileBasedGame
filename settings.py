@@ -1,3 +1,5 @@
+from os import path
+
 # Color constants
 WHITE = (255,255,255)
 BLACK = (0,0,0)
@@ -18,6 +20,10 @@ BGCOLOR = DARKGREY
 TILESIZE = 16
 GRIDWITH = WIDTH/TILESIZE
 GRIDHEIGHT = HEIGHT/TILESIZE
+
+# Directories
+GAME_FOLDER = path.dirname(__file__)
+MAP_FOLDER = path.join(GAME_FOLDER,"data","maps")
 
 # Player settings
 PLAYER_SPEED = 150
